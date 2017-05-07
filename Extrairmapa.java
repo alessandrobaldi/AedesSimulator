@@ -52,10 +52,6 @@ public class Extrairmapa {
         int totalex = 0;
         for (int cont = 0; cont < leituras.length - 1; cont++) {
             try{
-                if(leituras[cont].contains("restaurante"))
-                    {
-                        System.out.println("O restaurante Universitário está no nó "+ cont);
-                    }
             String atual[] = leituras[cont].split("<way id=");
             String ref[] = atual[atual.length - 1].split("nd ref=\"");
             Double latmedia = 0.0;
